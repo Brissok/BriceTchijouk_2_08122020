@@ -4,6 +4,10 @@
     --light-blue : #DEEBFF;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #fff;
     font-family: 'Raleway', sans-serif;
@@ -33,9 +37,40 @@ h3 {
 .toolbar {
     display: flex;
     flex-direction: row;
-
+    justify-content: space-between;
+    padding-top: 44px;
+    align-items: center;
+}
+.siteLogo {
+    flex-grow: 2;
+    height: 45px;
+}
+.navbar-link {
+    position: relative;
+    margin: auto 2.1rem;
+}
+.navbar-link_active {
+    color: var(--blue);
+}
+.navbar-link_active::before {
+    content: '';
+    height: 2px;
+    width: 150%;
+    left: -25%;
+    top: -58px;
+    background-color: var(--blue);
+    position: absolute;
+}
+.navbar-link:hover {
+    color: var(--blue);
+    transition: color .250s;
 }
 
+.log-link {
+    margin-left: 2.1rem;
+    color: var(--blue);
+    font-weight: 700;
+}
 .container {
     margin: 0 50px;
 }
