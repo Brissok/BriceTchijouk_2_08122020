@@ -25,7 +25,7 @@ ul, li {
     margin: 0;
 }
 
-h2 {
+h3 {
     font-size: 17px;
     font-weight: 800;
     line-height: 1;
@@ -39,6 +39,17 @@ h2 {
 .container {
     margin: 0 50px;
 }
+
+.searchResultsInfo-img_container {
+    content: "";
+    border: solid 1px;
+    border-color: var(--bg-grey);
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+}
+
 
 /* footer style */
 .footer {
