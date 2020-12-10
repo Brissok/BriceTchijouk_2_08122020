@@ -9,13 +9,13 @@
 </head>
 <body>
     <header class="container siteHeader">
-        <div class="toolbar">
-            <a href="index.html" class="siteLogo">
+        <div class="headerBar">
+            <a href="index.html" class="headerLogo">
                 <img src="images/logo/Reservia.svg" alt="Logo Reservia" style="width:96.6px; height: 45px;">
             </a>
             <nav class="navbar">
-                <a href="#hebergements" class="navbar-link navbar-link_active">Hébergements</a>
-                <a href="#activites" class="navbar-link">Activités</a>
+                <a href="#hebergements" class="navbar-link navbar-link_first navbar-link_active">Hébergements</a>
+                <a href="#activities" class="navbar-link navbar-link_second">Activités</a>
             </nav>
             <a href="#" class="log-link">S'inscrire</a>
         </div>
@@ -32,6 +32,12 @@
                 </div>
                 <input type="text" class="searchBox-input" value="Marseille, France">
                 <button class="btn searchBox-btn">Rechercher</button>
+                <a class="smartphoneSearch-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <!-- Font Awesome Free 5.15.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
+                        <path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/>
+                    </svg>
+                </a>
             </div>
             <div class="filters">
                 <h3 class="filters-title">Filtres</h3>
@@ -94,7 +100,7 @@
                 <a href="#"><div class="main-card"></div></a>
                 <a href="#"><div class="main-card"></div></a>
             </div>
-            <div class="mainContainer-link"><a href="#">Afficher plus</a></div>
+            <div class="mainContainer-link"><h3><a href="#">Afficher plus</a></h3></div>
         </main>
         <aside class="asideContainer">
             <header class="asideContainer-header">
@@ -109,8 +115,8 @@
         </aside>
     </div>
     <div class="container bodyLayout">
-        <div class="mainContainer activitiesContainer" id="activites">
-            <h2 class="mainContainer-title">Activités à Marseille</h2>
+        <div class="activitiesContainer" id="activities">
+            <h2 class="activitiesContainer-title">Activités à Marseille</h2>
             <div class="mainCards activityCards">
                 <a href="#"><div class="activity-card"></div></a>
                 <a href="#"><div class="activity-card"></div></a>
@@ -119,7 +125,7 @@
                 <a href="#"><div class="activity-card"></div></a>
                 <a href="#"><div class="activity-card"></div></a>
             </div>
-            <div class="mainContainer-link"><a href="#">Afficher plus</a></div>
+            <div class="mainContainer-link"><h3><a href="#">Afficher plus</a></h3></div>
         </div>
     </div>
     <footer class="footer">
