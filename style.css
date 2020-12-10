@@ -29,7 +29,7 @@ ul, li {
     margin: 0;
 }
 h2 {
-    font-size: 1.3 em;
+    font-size: 1.3em;
 }
 h3 {
     font-size: 1.1em;
@@ -83,24 +83,30 @@ h3 {
 }
 .headerSubtitle {
     margin-top: 0;
+
+/* search box style */
 }
 .searchBox {
     width: fit-content;
     height: 48px;
-    border: solid 1px;
-    border-color: var(--bg-grey);
+    border: solid 1px var(--bg-grey);
     border-radius: 12px;
     display: flex;
 }
 .searchBox-icon {
     width: 50px;
+    height: 50px;
+    border: none;
     background-color: var(--bg-grey);
     text-align: center;
-    border-radius: 9px 0 0 9px;
+    border-radius: 12px 0 0 12px;
+    position: relative;
+    top: -1px;
+    left: -1px;
 }
 .searchBox-icon img {
     position: relative;
-    top: 15px;
+    top: 11px;
 }
 input {
     border: none;
@@ -113,6 +119,12 @@ button {
     font-family: 'Raleway', sans-serif;
     font-size: 1.1em;
     font-weight: 700;
+    border: solid 1px var(--blue);
+    height: 50px;
+    position: relative;
+    top: -1px;
+    right: -1px;
+    cursor: pointer;
 }
 .searchBox-btn {
     border: none;
@@ -121,53 +133,115 @@ button {
     padding: 1px 18px;
     border-radius: 0 12px 12px 0;
 }
-.searchResultsInfo-img_container {
-    content: "";
+
+/* filters style */
+
+    .filters, .filters-btn{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 30px 0 30px 8px;
+    }
+    .filters-title {
+        margin-right: 20px;
+    }
+    .filters-btn {
+        height: 46px;
+        border: solid 2px var(--bg-grey);
+        background-color: #fff;
+        padding: 0;
+        border-radius: 25px;
+        margin: 0 12px;
+    }
+    .filters-btn:hover {
+        background-color: var(--light-blue);
+        border-color: var(--light-blue);
+        color: var(--blue);
+        transition: all .500s;
+        cursor: pointer;
+    }
+    .filters-btn_icon {
+        width: 48px;
+        height: 48px;
+        border: solid 1px var(--light-blue);
+        border-radius: 50% 50%;
+        background-color: var(--light-blue);
+        position: relative;
+        left: -2px;
+    }
+    .filters-btn_icon svg {
+        width: 18px;
+        height: 21px;
+        position: relative;
+        top: 13.5px;
+        left: 15px;
+        fill: var(--blue);
+    }
+    .filters-btn_name {
+        margin-left: 12px;
+        margin-right: 20px;
+    }
+
+.searchResultsInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.searchResultsInfo-icon_container {
     border: solid 1px;
     border-color: var(--bg-grey);
     border-radius: 50%;
     width: 22px;
     height: 22px;
-    position: absolute;
+    margin-right: 12px;
+    margin-left: 5px;
 }
-
-
+.searchResultsInfo svg{
+    fill: var(--blue);
+    position: relative;
+    height: 12px;
+    bottom: 5px;
+    left: 8.5px;
+}
+.searchResultsInfo p {
+    margin: 0;
+}
 /* footer style */
-.footer {
-    background-color: var(--bg-grey);
-    padding: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.footer-list {
-    width: 33%;
-    padding-right: 20px;
-}
-.footer-title {
-    margin-top: 0;
-}
-
-@media (max-width: 991px) {
     .footer {
-        flex-direction: column;
+        background-color: var(--bg-grey);
+        padding: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
     .footer-list {
-        width: auto;
+        width: 33%;
+        padding-right: 20px;
     }
     .footer-title {
-        margin-top: 0.83em;
+        margin-top: 0;
     }
-    .footer-list ul {
-        margin-bottom: 1em;
-    }
-}
 
-@media (max-width: 768px) {
-    .container {
-        margin: 0 20px;
+    @media (max-width: 991px) {
+        .footer {
+            flex-direction: column;
+        }
+        .footer-list {
+            width: auto;
+        }
+        .footer-title {
+            margin-top: 0.83em;
+        }
+        .footer-list ul {
+            margin-bottom: 1em;
+        }
     }
-    .footer {
-        padding: 20px;
+
+    @media (max-width: 768px) {
+        .container {
+            margin: 0 20px;
+        }
+        .footer {
+            padding: 20px;
+        }
     }
-}
