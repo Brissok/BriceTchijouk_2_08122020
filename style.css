@@ -30,6 +30,10 @@ ul, li {
     padding: 0;
     margin: 0;
 }
+h1 {
+    font-size: 1.4em;
+    line-height: 1.25;
+}
 h2 {
     font-size: 1.3em;
 }
@@ -81,8 +85,7 @@ h3 {
 
 .headerTitle {
     margin-top: 30px;
-    margin-bottom: 0;
-    line-height: 1.5;
+    margin-bottom: 8px;
 }
 .headerSubtitle {
     margin-top: 0;
@@ -226,6 +229,7 @@ button {
         border-radius: 50%;
         width: 22px;
         height: 22px;
+        flex-shrink: 0;
         margin-right: 12px;
         margin-left: 5px;
     }
@@ -284,7 +288,7 @@ button {
     background-color:#fff;
     border: 5px solid #fff;
     border-radius: 1.2rem;
-    box-shadow: 0 0 2em rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 0.5em rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
 }
 .main-card {
@@ -356,6 +360,40 @@ button {
 .card-img-left_3 {
     background-image: url(images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
 }
+.card-img-top_7 {
+    background-image: url(images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+}
+.card-img-top_8 {
+    background-image: url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+}
+.card-img-top_9 {
+    background-image: url(images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+}
+.card-img-top_10 {
+    background-image: url(images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+}
+.card-img-top_11 {
+    background-image: url(images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+}
+.card-img-top_12 {
+    background-image: url(images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+}
+.activity-card .card-img {
+    background-position-y: 16%;
+    height: 134px;
+}
+.activity-card .card-img-top_8 {
+    background-position-y: 46%;
+}
+.activity-card {
+    border: none;
+}
+.activity-card .card-body {
+    height: 37px;
+    padding-top: 15px;
+    padding-left: 20px;
+
+}
 .aside-card h5 {
     line-height: 1.2;
     margin: 12px 0;
@@ -397,10 +435,12 @@ button {
             width: auto;
         }
         .footer-title {
-            margin-top: 0.83em;
+            margin-top: 29px;
+            margin-left: 9px;
         }
         .footer-list ul {
             margin-bottom: 1em;
+            margin-left: 10px;
         }
     }
 
@@ -408,10 +448,8 @@ button {
         .container {
             padding: 0 20px;
         }
-       
-        .searchBox-btn {
-            display: none;
-        }
+        
+        
 
         .headerBar {
             flex-wrap: wrap;
@@ -435,7 +473,7 @@ button {
         .navbar-link {
             width: 50%;
             text-align: center;
-            margin: 0;
+            margin: 23px 0 0 0;
         }
         .navbar-link::before {
             display: none;
@@ -457,10 +495,17 @@ button {
         .navbar-link_second::after {
             left: 0;
         }
+        
+        .searchBox {
+            margin: 35px 0;
+        }
+        .searchBox-btn {
+            display: none;
+        }
 
         .filters-title {
             width: 100%;
-            margin: 7px 0;
+            margin: 13px 0;
         }
 
         .bodyLayout {
@@ -469,8 +514,18 @@ button {
         }
         .mainContainer {
             order: 1;
+            margin-right: 0;
+            border-radius: 0;
+            padding: 0 20px 20px;
         }
-        
+        .activitiesContainer {
+            padding: 0 20px;
+        }
+        .activityCards {
+            padding-top: 4px;
+            padding-bottom: 26px;
+        }
+
         .footer {
             padding: 20px;
         }
@@ -490,10 +545,6 @@ button {
         .filters {
             margin-left: 0;
         }
-        .filters-title {
-            width: 100%;
-            margin: 7px 0;
-        }
         .filters-btn {
             margin-left: 0;
             margin-right: 10px;
@@ -502,4 +553,39 @@ button {
             margin-right: 14px;
             font-size: 0.9em;
         }
+
+        .bodyLayout {
+            padding: 0;
+        }
+        .asideContainer {
+            border-radius: 0;
+            padding: 19px 20px 26px 20px;
+            min-width: 280px;
+        }
+        .mainContainer {
+            min-width: 280px;
+            background-color: #fff;
+            margin-top: 13px;
+        }
+        .mainCards {
+            display: block;
+        }
+        .main-card {
+            width: calc(100% - 10px);
+            margin-bottom: 12px;
+        }
+        .activity-card {
+            width: 100%;
+            margin-bottom: 24px;
+        }
+        .aside-card {
+            margin-bottom: 11px;
+        }
+        .card-img-top {
+            width: 100%;
+        }
+        .mainContainer-link {
+            padding-top: 10px;
+        }
+        
     }
