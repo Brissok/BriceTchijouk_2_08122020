@@ -1,5 +1,6 @@
 :root {
     --bg-grey : #F2F2F2;
+    --grey : #d9d9d9;
     --blue : #0065FC;
     --light-blue : #DEEBFF;
 }
@@ -17,6 +18,8 @@ body {
 }
 .container {
     padding: 0 50px;
+    margin: 0 auto;
+    max-width: 1440px;
 }
 a {
     text-decoration: none;
@@ -175,7 +178,7 @@ button {
     }
     .filters-btn {
         height: 46px;
-        border: solid 2px var(--bg-grey);
+        border: solid 2px var(--grey);
         background-color: #fff;
         padding: 0;
         border-radius: 25px;
@@ -219,7 +222,7 @@ button {
     }
     .searchResultsInfo-icon_container {
         border: solid 1px;
-        border-color: var(--bg-grey);
+        border-color: var(--grey);
         border-radius: 50%;
         width: 22px;
         height: 22px;
@@ -240,12 +243,10 @@ button {
 
 /* main style */
     .bodyLayout {
-        height: 625px;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: stretch;
-
     }
     .mainContainer, .asideContainer {
         margin-top: 37px;
@@ -255,11 +256,14 @@ button {
     .mainContainer {
         flex-grow: 2;
         margin-right: 40px;
-        padding: 19px 40px 40px;
+        padding: 19px 40px 33px;
+        max-width: 800px;
     }
     .asideContainer {
         flex-grow: 1;
-        padding: 19px 38px;
+        padding: 19px 38px 1px 38px;
+        max-width: 344px;
+        min-width: 324px;
     }
     .asideContainer-header {
         display: flex;
@@ -267,6 +271,107 @@ button {
         align-items: center;
     }
 
+/* cards styles */
+
+.mainCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card {
+    position: relative;
+    display: flex;
+    background-color:#fff;
+    border: 5px solid #fff;
+    border-radius: 1.2rem;
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+.main-card {
+    flex-direction: column;
+    width: 235px;
+}
+.aside-card {
+    flex-direction: row;
+    margin-bottom: 33px;
+}
+.card-body {
+    padding: 4px 14px;
+}
+.aside-card .card-body {
+    padding: 4px 20px;
+}
+.card-title {
+    margin: 0;
+    font-size: 1em;
+    font-weight: 800;
+}
+.card-text {
+    font-size: 0.8em;
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+.card-img {
+    flex-shrink: 0;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-top-left-radius: 1rem;
+}
+.card-img-top {
+    width: 236px;
+    height: 114px;
+    border-top-right-radius: 1rem;
+}
+.card-img-left {
+    width: 127px;
+    height: 134px;
+    border-bottom-left-radius: 1rem;
+}
+.card-img-top_1 {
+    background-image: url(images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+}
+.card-img-top_2 {
+    background-image: url(images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+}
+.card-img-top_3 {
+    background-image: url(images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+}
+.card-img-top_4 {
+    background-image: url(images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+}
+.card-img-top_5 {
+    background-image: url(images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+}
+.card-img-top_6 {
+    background-image: url(images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+}
+.card-img-left_1 {
+    background-image: url(images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+}
+.card-img-left_2 {
+    background-image: url(images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
+}
+.card-img-left_3 {
+    background-image: url(images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+}
+.aside-card h5 {
+    line-height: 1.2;
+    margin: 12px 0;
+}
+.stars {
+    height: 16px;
+    line-height: 1;
+}
+.aside-card .stars {
+    position: absolute;
+    bottom: 9px;
+    height: 12px;
+}
+.mainContainer-link h3 {
+    margin: 13px 4px;
+}
 
 /* footer style */
     .footer {
