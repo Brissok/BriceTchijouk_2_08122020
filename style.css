@@ -19,7 +19,7 @@ body {
 .container {
     padding: 0 50px;
     margin: 0 auto;
-    max-width: 1440px;
+    max-width: 1340px;
 }
 a {
     text-decoration: none;
@@ -54,6 +54,10 @@ h3 {
 }
 .headerLogo {
     flex-grow: 2;
+    height: 45px;
+}
+.headerLogo img {
+    width:96.6px;
     height: 45px;
 }
 .navbar-link {
@@ -116,6 +120,8 @@ h3 {
 .searchBox-icon img {
     position: relative;
     top: 12px;
+    width: 13px; 
+    height: 18px;
 }
 .searchBox-input {
     border: none;
@@ -178,6 +184,9 @@ button {
     }
     .filters-title {
         margin-right: 20px;
+        font-size: 1.1em;
+        font-weight: 800;
+        line-height: 1;
     }
     .filters-btn {
         height: 46px;
@@ -273,6 +282,14 @@ button {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+    .asideContainer-title {
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+    .asideContainer-icon {
+        width: 22px;
+        height: 18px;
     }
 
 /* cards styles */
@@ -393,6 +410,7 @@ button {
 }
 .activity-card {
     border: none;
+    margin-bottom: 24px;
 }
 .activity-card .card-body {
     height: 37px;
@@ -402,6 +420,8 @@ button {
 .activityCards {
     padding-top: 4px;
     padding-bottom: 26px;
+    height: fit-content;
+    width: 100%;
 }
 
 .aside-card h5 {
@@ -417,13 +437,29 @@ button {
     bottom: 9px;
     height: 12px;
 }
-.mainContainer-link h3 {
+.stars svg {
+    width: 12px;
+    height: 12px;
+}
+.bluestar {
+    fill: var(--blue);
+}
+.greystar {
+    fill: var(--grey);
+}
+
+.mainContainer-link {
     margin: 13px 4px;
+    font-size: 1.1em;
+    font-weight: 800;
+    line-height: 1;
 }
 
 /* footer style */
     .footer {
-        background-color: var(--bg-grey);
+        background-color: var(--bg-grey);;
+    }
+    .footer-content {
         padding: 50px;
         display: flex;
         flex-direction: row;
@@ -436,6 +472,7 @@ button {
     .footer-title {
         margin-top: 0;
     }
+    
     @media screen and (max-width: 1400px) {
 
         .main-card {
@@ -444,17 +481,16 @@ button {
             min-width: 235px;
             margin-bottom: 12px;
         }
+        .activity-card {
+            margin-bottom: 24px;
+        }
         .card-img-top {
             width: 100%;
         }
     }
-    @media screen and (max-width: 1150px) {
-        .main-card {
-            width: 100%;
-        }
-    }
+
     @media screen and (max-width: 991px) {
-        .footer {
+        .footer-content {
             flex-direction: column;
         }
         .footer-list {
@@ -469,14 +505,6 @@ button {
             margin-left: 10px;
         }
 
-
-
-
-        .activity-card {
-            width: 100%;
-            max-width: 450px;
-            margin-bottom: 24px;
-        }
         .aside-card {
             margin-bottom: 11px;
         }
@@ -574,6 +602,7 @@ button {
             margin-left: 20px;
             max-width: 473px;
         }
+
         .mainContainer {
             min-width: 280px;
             background-color: #fff;
@@ -584,11 +613,6 @@ button {
             padding: 0 20px 20px;
         }
         
-        .activity-card {
-            width: 100%;
-            max-width: 450px;
-            margin-bottom: 24px;
-        }
         .aside-card {
             margin-bottom: 11px;
         }
@@ -602,6 +626,12 @@ button {
         
         .footer {
             padding: 20px;
+        }
+    }
+
+    @media screen and (max-width: 550px) {
+        .main-card {
+            width: 100%;
         }
     }
 
@@ -627,37 +657,49 @@ button {
     @media screen and (min-width: 425px) {
         
         .activityCards {
-            flex-direction: column;
-            align-items: center;
             padding-bottom: 30px;
-            margin: 0 auto;
         }
 
     }
-    @media screen and (min-width: 560px) and (max-width: 768px) {
-        .activityCards {
-            height: 642px;
-        }
+    @media screen and (min-width: 590px) and (max-width: 768px) {
+
         .activity-card {
             height: fit-content;
-            width: 260px;
+            width: 48%;
+            min-width: 260px;
         }
     }
     @media screen and (min-width: 768px) {
         .smartphoneSearch-btn {
             display: none;
         }
+        .activity-card {
+            width: 48%;
+            max-width: 400px;
+        }
+
+    }
+    @media screen and (min-width: 1100px) {
+ 
+        .activity-card {
+            width: 30%;
+            min-width: 260px;
+            
+        }
+
+    }
+    @media screen and (min-width: 1400px) {
         .activitiesContainer {
             width: 100%;
         }
         .activityCards {
-            height: 941px;
-            align-items: stretch;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 476px;
         }
         .activity-card {
-            width: 50%;
-            max-width: 400px;
-            margin-right: 1em;
+            width: 302px;
         }
         .activity-card .card-img-top {
             width: 100%;
@@ -677,20 +719,5 @@ button {
         }
         .activity-card .card-img-top_12 {
             height: 153px;
-        }
-    }
-    @media screen and (min-width: 1100px) {
-        .activityCards {
-            height: 742px;
-            justify-content: flex-start;
-        }
-        .activity-card {
-            width: 302px;
-        }
-    }
-    @media screen and (min-width: 1400px) {
-        .activityCards {
-            height: 476px;
-            justify-content: space-between;
         }
     }
