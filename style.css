@@ -19,7 +19,7 @@ body {
 .container {
     padding: 0 50px;
     margin: 0 auto;
-    max-width: 1440px;
+    max-width: 1340px;
 }
 a {
     text-decoration: none;
@@ -444,7 +444,9 @@ button {
 
 /* footer style */
     .footer {
-        background-color: var(--bg-grey);
+        background-color: var(--bg-grey);;
+    }
+    .footer-content {
         padding: 50px;
         display: flex;
         flex-direction: row;
