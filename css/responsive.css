@@ -1,0 +1,237 @@
+@media screen and (max-width: 1400px) {
+    .main-card {
+        width: 45%;
+        max-width: 350px;
+        min-width: 235px;
+        margin-bottom: 12px;
+    }
+    .activity-card {
+        margin-bottom: 24px;
+    }
+    .card-img-top {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .footer-content {
+        flex-direction: column;
+    }
+    .footer-list {
+        width: auto;
+    }
+    .footer-title {
+        margin-top: 29px;
+        margin-left: 9px;
+    }
+    .footer-list ul {
+        margin-bottom: 1em;
+        margin-left: 10px;
+    }
+
+    .aside-card {
+        margin-bottom: 11px;
+    }
+    .card-img-top {
+        width: 100%;
+    }
+    .mainContainer-link {
+        padding-top: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+    .headerBar {
+        flex-wrap: wrap;
+        padding-top: 22px;
+    }
+    .navbar {
+        order: 1;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .headerLogo {
+        width: 50%;
+    }
+    .log-link {
+        width: 50%;
+        text-align: right;
+        margin: 0;
+    }
+    .navbar-link {
+        width: 50%;
+        text-align: center;
+        margin: 23px 0 0 0;
+    }
+    .navbar-link::before {
+        display: none;
+    }
+    .navbar-link::after {
+        content: '';
+        height: 2px;
+        width: calc(100% + 20px);
+        top: 33px;
+        background-color: var(--bg-grey);
+        position: absolute;
+    }
+    .navbar-link_active::after {
+        background-color: var(--blue);
+    }
+    .navbar-link_first::after {
+        left: -20px;
+    }
+    .navbar-link_second::after {
+        left: 0;
+    }
+    
+    .searchBox {
+        margin: 35px 0;
+    }
+    .searchBox-btn {
+        display: none;
+    }
+
+    .filters-title {
+        width: 100%;
+        margin: 13px 0;
+    }
+
+    .bodyLayout {
+        display: flex;
+        flex-direction: column;
+    }
+    .bodyLayout {
+        padding: 0;
+    }
+    .asideContainer {
+        border-radius: 0;
+        padding: 19px 0 26px;
+        width: 100%;
+        min-width: 280px;
+        max-width: 768px;
+        align-self: center;
+    }
+    .asideContainer-header, .aside-card {
+        margin-right: 20px;
+        margin-left: 20px;
+        max-width: 473px;
+    }
+
+    .mainContainer {
+        min-width: 280px;
+        background-color: #fff;
+        margin-top: 13px;
+        order: 1;
+        margin-right: 0;
+        border-radius: 0;
+        padding: 0 20px 20px;
+    }
+    
+    .aside-card {
+        margin-bottom: 11px;
+    }
+    .card-img-top {
+        width: 100%;
+    }
+    .mainContainer-link {
+        padding-top: 10px;
+    }
+
+    .footer {
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .main-card {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 425px) {
+    .searchBox {
+        width: 100%;
+    }
+
+    .filters {
+        margin-left: 0;
+    }
+    .filters-btn {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+    .filters-btn_name {
+        margin-right: 14px;
+        font-size: 0.9em;
+    }
+}
+
+/* Section activities - mobile first */
+
+@media screen and (min-width: 425px) {
+    
+    .activityCards {
+        padding-bottom: 30px;
+    }
+
+}
+@media screen and (min-width: 590px) and (max-width: 768px) {
+
+    .activity-card {
+        height: fit-content;
+        width: 48%;
+        min-width: 260px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .smartphoneSearch-btn {
+        display: none;
+    }
+    .activity-card {
+        width: 48%;
+        max-width: 400px;
+    }
+}
+@media screen and (min-width: 1100px) {
+    .activity-card {
+        width: 30%;
+        min-width: 260px;
+    }
+}
+@media screen and (min-width: 1400px) {
+    .activitiesContainer {
+        width: 100%;
+    }
+    .activityCards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 476px;
+    }
+    .activity-card {
+        width: 302px;
+    }
+    .activity-card .card-img-top {
+        width: 100%;
+    }
+    .activity-card .card-img-top_7, .activity-card .card-img-top_10 {
+        background-position-y: 0;
+        height: 390px;
+    }
+    .activity-card .card-img-top_8 {
+        height: 180px;
+    }
+    .activity-card .card-img-top_9 {
+        height: 110px;
+    }
+    .activity-card .card-img-top_11 {
+        height: 140px;
+    }
+    .activity-card .card-img-top_12 {
+        height: 153px;
+    }
+}
